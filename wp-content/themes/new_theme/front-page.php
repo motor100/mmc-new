@@ -32,9 +32,6 @@
               <div class="swiper-slide__title"><?php get_template_part( 'template-parts/company-title' ); ?></div>
             </div>
           </div>
-          <div class="swiper-slide__bg">
-            <img src="/wp-content/themes/new_theme/assets/images/main-slider-bg.png" alt="">
-          </div>
         </div>
       </div>
     </div>

@@ -51,53 +51,6 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
-    // Смотреть все направления
-    let directionItem = document.querySelectorAll('.directions-section .item'),
-        seeAllDirections = document.querySelector('.directions-section .see-all-directions-btn'),
-        directionsScrollArray = [],
-        directionsStep = 4;
-
-    function showHiddenDirectionItem() {
-      let hiddenItem = document.querySelectorAll('.directions-section .item-hidden');
-      if (hiddenItem.length > 0) {
-        for (let i = 0; i < hiddenItem.length; i++) {
-          if (i < directionsStep) {
-            hiddenItem[i].classList.remove('item-hidden');
-          }
-        }
-        directionsScrollArray.push(window.pageYOffset);
-      }
-
-      if (seeAllDirections.innerHTML == "Свернуть") {
-
-        for (let j = directionsStep; j < directionItem.length; j++) {
-          directionItem[j].classList.add('item-hidden');
-        }
-        seeAllDirections.innerHTML = "Показать еще услуги";
-
-        let toScroll = directionsScrollArray[0];
-        scroll(0,toScroll);
-      }
-
-      if (hiddenItem.length > 4) {
-        seeAllDirections.innerHTML = "Показать еще услуги";
-      }
-      if (hiddenItem.length == 4) {
-        seeAllDirections.innerHTML = "Свернуть";
-      }
-    }
-
-    seeAllDirections.onclick = showHiddenDirectionItem;
-
-    // Аккордеон Направления
-    let directionItems = document.querySelectorAll('.directions-section .item');
-        directionItemsTitle = document.querySelectorAll('.directions-section .item-title')
-
-    for (let i = 0; i < directionItemsTitle.length; i++) {
-      directionItemsTitle[i].onclick = function(e) {
-        directionItems[i].classList.toggle('active');
-      }
-    }
 
     // Слайдер О нас
     const aboutSlider = new Swiper(".about-slider", {
@@ -130,10 +83,13 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   
   // to-top плавная прокрутка вверх
+  /*
   document.getElementById("to-top").onclick = function() {
     scroll(0, 0);
   }
+  */
   
+  /*
   window.onscroll = function() {
     // Показать to-top при скролле
     let scrToTop = window.pageYOffset || document.documentElement.scrollTop,
@@ -154,6 +110,7 @@ document.addEventListener('DOMContentLoaded', () => {
       fixedDesktopMenu.classList.remove('active');
     }
   }
+  */
 
   // Модальные окна
   let modal = document.querySelectorAll('.modal'),

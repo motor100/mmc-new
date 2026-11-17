@@ -13,6 +13,7 @@
   <footer class="footer">
     <div class="container">
       <p>Footer</p>
+      <p><?php echo date("Y") ?></p>
     </div>
   </footer>
 
@@ -65,6 +66,12 @@
     <div class="address-item">
       <p>Будни: 8:00–19:00</p>
       <p>Выходные: 8:00–15:00</p>
+    </div>
+  </div>
+
+  <div class="burger-menu-wrapper">
+    <div class="burger-menu">
+      <span></span>
     </div>
   </div>
 

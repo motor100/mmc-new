@@ -22,19 +22,28 @@
   <?php wp_body_open(); ?>
 
   <header class="header">
-    <div class="menu-wrapper">
-      <div class="container">
-        <ul id="top-nav-ul" class="navbar top-menu">
-          <li id="menu-item-23" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-23">
-            <a href="/#directions" aria-current="page">Направления</a>
-          </li>
-          <li id="menu-item-24" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-24">
-            <a href="/#doctors" aria-current="page">Врачи</a>
-          </li>
-          <li id="menu-item-25" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-25">
-            <a href="/#contacts" aria-current="page">Контакты</a>
-          </li>
-        </ul>
+    
+      <div class="header-top">
+        <div class="container">
+          <div class="header-address">г. Миасс, ул. Ильменская, 85</div>
+        </div>
       </div>
+
+      <div class="header-menu">
+        <div class="container">
+          <ul id="top-nav-ul" class="navbar top-menu">
+            <li id="menu-item-23" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-23">
+              <a href="/#directions" aria-current="page">Направления</a>
+            </li>
+            <li id="menu-item-24" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-24">
+              <a href="/#doctors" aria-current="page">Врачи</a>
+            </li>
+            <li id="menu-item-25" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-25">
+              <a href="/#contacts" aria-current="page">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
     </div>
   </header>
